@@ -1,0 +1,17 @@
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start-button {
+  height: 50px;
+  width: 200px;
+  color: black;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid #8A2BE2;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
