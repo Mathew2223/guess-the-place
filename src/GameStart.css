@@ -1,25 +1,41 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.main-menu {
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-menu,
+.screen {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
   gap: 30px;
+  max-width: 700px;
+  width: 100%;
+  padding: 40px 24px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  margin-top: 20px;
 }
-
-// By qwen.ai
 
 h1 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #1565c0;
   text-align: center;
   margin-bottom: 12px;
-  font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 h2 {
@@ -27,34 +43,8 @@ h2 {
   font-weight: 500;
   color: #555;
   text-align: center;
-  margin-bottom: 32px;
   max-width: 600px;
   line-height: 1.5;
-}
-
-.start-button {
-  height: 50px;
-  width: 200px;
-  color: #2c3e50;
-  font-size: 16px;
-  font-weight: 600;
-  background-color: #f0f4ff;
-  border: 2px solid #8a2be2;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(138, 43, 226, 0.25);
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.start-button:hover {
-  background-color: #e0e8ff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(138, 43, 226, 0.35);
-}
-
-.start-button:active {
-  transform: translateY(0);
-  box-shadow: 0 3px 8px rgba(138, 43, 226, 0.3);
 }
 
 p {
@@ -63,4 +53,29 @@ p {
   text-align: center;
   margin: 12px 0;
   font-weight: 500;
+}
+
+.start-button {
+  height: 52px;
+  width: 220px;
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #f0f4ff;
+  border: 2px solid #8a2be2;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.28);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.start-button:hover {
+  background-color: #e0e8ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(138, 43, 226, 0.38);
+}
+
+.start-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(138, 43, 226, 0.3);
 }
