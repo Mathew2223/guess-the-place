@@ -1,5 +1,4 @@
 import './GameProcess.css';
-import { useState } from 'react';
 
 export default function PlayingGame({
   currentLocation,
@@ -9,7 +8,9 @@ export default function PlayingGame({
   handleVariantClick,
   onNextQuestion,
   nextButtonText
-}) {
+})
+{
+
   return (
     <section>
       <div className='game-screen'>

@@ -1,17 +1,36 @@
 {
   "name": "guess-place",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
+  "description": "guees place game",
+  "keywords": [
+    "guess",
+    "place"
+  ],
+  "homepage": "https://github.com/Mathew2223/guess-the-place#readme",
+  "bugs": {
+    "url": "https://github.com/Mathew2223/guess-the-place/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mathew2223/guess-the-place.git"
+  },
+  "license": "ISC",
+  "author": "Matvey Sitnikov",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.14.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -21,6 +40,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
     "vite": "^7.2.4"
   }

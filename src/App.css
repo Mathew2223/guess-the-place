@@ -1,0 +1,60 @@
+/* Стили для ссылки-кнопки */
+.start-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1a1a2e;
+  color: #73fe25;
+  border: 2px solid #73fe25;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.start-button:hover {
+  background-color: #73fe25;
+  color: #1a1a2e;
+  box-shadow: 0 0 15px rgba(115, 254, 37, 0.6);
+  transform: translateY(-2px);
+}
+
+.start-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.logout-btn {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.logout-btn:hover {
+  background-color: #ff6b81;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.4);
+}
+
+.logout-btn:active {
+  transform: scale(0.95);
+}
+
+.logout-btn:disabled {
+  background-color: #57606f;
+  color: #a4b0be;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
